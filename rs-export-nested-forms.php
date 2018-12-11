@@ -102,7 +102,7 @@ function rs_enf_replace_nested_form_export_value( $value, $form_id, $field_id, $
 	}
 	
 	
-	$title = $form['title'] . " (" . ( $entry_count != 1 ? $entry_count . ' entries' : '1 entry' ) . ')';
+	$title = $nested_form['title'] . " (" . ( $entry_count != 1 ? $entry_count . ' entries' : '1 entry' ) . ')';
 	
 	return $title . "\n\n" . implode("\n\n", $entries);
 }
